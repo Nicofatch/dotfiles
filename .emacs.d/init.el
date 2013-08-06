@@ -18,7 +18,7 @@
 (require 'compile)
 (ido-mode t)
 (menu-bar-mode -1)
-(normal-erase-is-backspace-mode 1)
+(normal-erase-is-backspace-mode 0)
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
 (setq column-number-mode t)
@@ -43,8 +43,6 @@
 (line-number-mode t)
 
 (custom-set-variables '(pc-selection-mode t nil (pc-select)))
-
-(custom-set-variables( '(mouse-wheel-mode t nil (mwheel))))
 
 (setq display-time-24hr-format t)
 (setq display-time-day-and-date t)
