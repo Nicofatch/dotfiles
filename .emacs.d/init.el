@@ -28,6 +28,32 @@
 (setq suggest-key-bindings t)
 (setq vc-follow-symlinks t)
 
+;; Raccouris clavier
+(global-set-key [f2] 'save-buffer)
+(global-set-key [f3] 'find-file)
+(global-set-key [f4] 'kill-this-buffer)
+(global-set-key [f9] 'compile)
+(global-set-key [(control z)] 'undo)
+(global-set-key [(meta g)] 'goto-line)
+
+(set-language-environment "latin-1")
+(standard-display-european t)
+
+(column-number-mode t)
+(line-number-mode t)
+
+(custom-set-variables '(pc-selection-mode t nil (pc-select)))
+
+(custom-set-variables( '(mouse-wheel-mode t nil (mwheel))))
+
+(setq display-time-24hr-format t)
+(setq display-time-day-and-date t)
+
+(global-font-lock-mode t)
+
+(require 'paren)
+(show-paren-mode)
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -60,7 +86,6 @@
 (global-set-key "\M-p" 'prev5)
 (global-set-key "\M-o" 'other-window)
 (global-set-key "\M-i" 'back-window)
-(global-set-key "\C-z" 'zap-to-char)
 (global-set-key "\C-h" 'backward-delete-char)
 (global-set-key "\M-d" 'delete-word)
 (global-set-key "\M-h" 'backward-delete-word)
