@@ -37,7 +37,6 @@
 (global-set-key [(meta g)] 'goto-line)
 
 (set-language-environment "latin-1")
-(standard-display-european t)
 
 (column-number-mode t)
 (line-number-mode t)
