@@ -36,10 +36,33 @@
 (global-set-key [(control z)] 'undo)
 (global-set-key [(meta g)] 'goto-line)
 
-(set-language-environment "latin-1")
+
+(standard-display-european t)
+
+(if (>= emacs-major-version 21)
+(progn
+(set-language-environment 'latin-1)
+(set-terminal-coding-system 'latin-1)
+(set-keyboard-coding-system 'latin-1)
+)
+(progn
+(set-terminal-coding-system 'latin-1)
+(set-keyboard-coding-system 'latin-1)
+(set-language-environment 'latin-1)
+)
+) 
+;;(set-language-environment "latin-1")
+;;(load-library "iso-transl")
+;;(setq selection-coding-system 'compound-text-with-extensions)
+
+;;(setq locale-coding-system 'utf-8)
+;;(set-selection-coding-system 'utf-8)
+;;(prefer-coding-system 'utf-8)
 
 (column-number-mode t)
 (line-number-mode t)
+
+;;(set-input-mode nil nil 1) 
 
 (custom-set-variables '(pc-selection-mode t nil (pc-select)))
 
