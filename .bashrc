@@ -225,3 +225,6 @@ fi
 
 ## Define any user-specific variables you want here.
 source ~/.bashrc_custom
+export PATH=/home/nico/.nvm/v0.10.12/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/nico/dev/android_sdk/tools
+export PATH=/home/nico/.nvm/v0.10.12/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/nico/dev/android_sdk/tools
+export PATH=/home/nico/.nvm/v0.10.12/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/nico/dev/android_sdk/tools:/home/nico/dev/android_sdk/platform-tools

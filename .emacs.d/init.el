@@ -37,7 +37,7 @@
 (global-set-key [(meta g)] 'goto-line)
 
 
-(standard-display-european t)
+;;(standard-display-european t)
 
 (if (>= emacs-major-version 21)
 (progn
